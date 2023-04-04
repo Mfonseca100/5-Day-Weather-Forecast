@@ -1,5 +1,4 @@
-
-
+// updates the date and time on a webpage, as well as sets the dates for the next six days in the future.
 function updateTime(dayOffset = 5) {
     const now = new Date();
     const dateTime = now.toLocaleString('en-US', {
@@ -36,14 +35,14 @@ function updateTime(dayOffset = 5) {
     }
   }
 setInterval(updateTime, 1000);
-
+//references to some elements from HTML using their id attributes.
 const newName = document.getElementById("query");
 const wind = document.getElementById("wind");
 const humidity = document.getElementById("humidity");
 
 function GetInfo(name) {
     console.log("Search query:", name);
-
+//fetching API for weather status of specific city with for loop included for each day
     fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + name + "&cnt=5&appid=bfdd27034df84d0b10594fb0a3cac5d2")
         .then(response => response.json())
         .then(function (data) {
@@ -65,7 +64,8 @@ function GetInfo(name) {
             document.querySelector('#cityName').textContent = data.city.name;
         });
 }
-
+//click event listener on the button element
+//aded event.preventDefault to prevent the default behavior of the button, which is to submit a form or reload the page.
 document.querySelector('#search-btn').addEventListener("click", function (event) {
     event.preventDefault()
     var selected = newName.value
