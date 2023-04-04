@@ -1,3 +1,5 @@
+
+
 function updateTime(dayOffset = 5) {
     const now = new Date();
     const dateTime = now.toLocaleString('en-US', {
@@ -13,7 +15,7 @@ function updateTime(dayOffset = 5) {
       month: 'short'
     };
   
-    
+
     for (let i = 1; i <= 6; i++) { // Changed loop to iterate up to 6
       const day = new Date();
       day.setDate(now.getDate() + i - 1 + dayOffset);

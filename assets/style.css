@@ -28,6 +28,7 @@ body {
     margin-left: 10px;
     max-width: 1200px;
     width: 100%;
+    
 }
 
 .sidebar {
@@ -132,58 +133,27 @@ body {
     justify-content: space-between;
 }
 
-nav .options {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.options button {
-    font-size: 16px;
-    border: none;
-    background: transparent;
-    font-weight: 600;
-    color: grey;
-    cursor: pointer;
-}
-
-.options button.active {
-    color: rgba(27, 107, 246, 0.884);
-}
-
-.options button:hover {
-    text-decoration: underline;
-    text-decoration-color: pink;
-    color: rgb(255, 9, 181);
-}
-
-nav .units button {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    color: #1a1a1a;
-    background-color: #fff;
-}
-
-.units button.active {
-    color: rgba(27, 107, 246, 0.884);
-    background-color: #6161614f;
+h1 { 
+        font-size: 2em;
+        color: blue;
+        font-size: 2em;
+        text-align: center;
 }
 
 .imgClass {
     width: 80px;
     height: 80px;
 }
-
 #weatherContainer {
     display: flex;
-    justify-content: space-between;
-}
-
-.icons {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icons {
     margin-top: 100px;
     display: inline-block;
     vertical-align: middle;
     background-color: #ffffffbd;
     border-radius: 3px;
-}
+  }
