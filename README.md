@@ -30,6 +30,6 @@ THEN I am again presented with current and future conditions for that city
 ## Mock-Up
 
 The following image shows the web application's appearance and functionality:
-![ScreenshotofSite](./assets/images/mfonseca100.github.io_5-Day-Weather-Forecast_.png)
+![ScreenshotofSite](./assets/images/127.0.0.1_5500_index.html.png)
 ## URL to deployed site 
 https://mfonseca100.github.io/5-Day-Weather-Forecast/
